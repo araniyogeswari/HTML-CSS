@@ -1,0 +1,19 @@
+        img{
+        
+            animation: picture 10s ease-in-out 2s  infinite;
+        }
+        @keyframes picture{
+            0%{
+                transform:  translate(0cm ,0cm) ;
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: translate(8cm, 0cm) ;
+                transform: rotate(20deg);
+            }
+            50%{
+                transform: translate(10cm, 8cm);
+                transform: rotate(40deg);
+            }
+
+        }
