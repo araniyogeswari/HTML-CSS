@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   background-color: #d3102a;
+
+}
+ul{
+    display: flex;
+    gap:1cm;
+    list-style: circle;
+
+}
+.meat{
+    width: 100px;
+    height: 100px;
+    background-color: #d3102a;
+    
+}
