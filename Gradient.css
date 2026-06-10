@@ -1,0 +1,12 @@
+h1{
+    height: 10cm;
+    background : linear-gradient(32deg, red, green, blue,yellow, cyan, magenta,orange);
+    /* background : radial-gradient(at center, red, green, blue,yellow, cyan, magenta,orange); */
+    /* background : conic-gradient(red, green, blue,yellow, cyan, magenta,orange); */
+}
+p{
+    display: flex;
+    justify-content: space-evenly;
+     flex-wrap: wrap;   
+     gap:10cm;
+}
