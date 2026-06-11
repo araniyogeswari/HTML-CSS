@@ -1,0 +1,90 @@
+let name ="Arani";
+var age = 20;
+const height = "6.72";
+console.log(height);
+console.log(age);
+console.log(name); 
+console.log(age+2);
+console.log(age*2);
+console.log(age/2);
+console.log(age%2); 
+console.log(age**2);    
+console.log(age++);
+console.log(age--);
+	age+=3;
+	console.log(age);
+	age-=5;
+	console.log(age);
+	age*=5;
+    	console.log(age);
+console.log(age>height);
+console.log(age<height);
+console.log(age>=height);
+let food = "Pizza";
+let breakfast = "Bread";
+let food1 = "Burger";
+let food2 = "Pasta";    
+let food3 = "Fries";
+let food4 = "Sandwich";
+let food5 = "Noodles";
+let food6 = "Dosa";
+if (food === "breakfast") {
+    console.log("I will eat " + breakfast);
+} else if (food === "lunch") {
+    console.log("I will eat " + food1);
+}
+else  if (food === "dinner") {
+    console.log("I will eat " + food2);
+}
+else if (food === "snack") {
+    console.log("I will eat " + food3);
+}       
+else if (food === "brunch") {
+    console.log("I will eat " + food4);
+}   
+else if (food === "supper") {
+    console.log("I will eat " + food5);
+}
+else if (food === "tiffin") {
+    console.log("I will eat " + food6);
+}
+else {
+    console.log("I will eat " + food);
+}       
+function (dosa)
+{
+    console.log("dough");
+    console.log("Round the dough");
+    console.log("oil");
+    console.log(twist);
+    console.log("serve it hot");
+}
+for(let i=1;i<=5;i++){
+    cook();}
+    function num(n)
+    {
+        if(n>10)
+        {
+            return;
+        }
+        console.log(n);
+        n+=1;
+        num(n);
+    }
+    num(1)
+    function guess(n) {
+    let userGuess = Number(prompt("Enter a number:"));
+
+    if (userGuess == n) {
+        console.log("Congratulations! You guessed the number.");
+    } else if (userGuess < n) {
+        console.log("Too low! Try again.");
+        guess(n);
+    } else {
+        console.log("Too high! Try again.");
+        guess(n);
+    }
+}
+
+let number = Math.floor(Math.random() * 100) + 1;
+guess(number);
