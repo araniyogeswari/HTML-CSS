@@ -1,0 +1,17 @@
+img{
+    width:400px;
+}
+body{
+    background-color:#ffadad;
+}
+#content{
+    display:flex;
+    gap:1cm;
+}
+h1{
+    text-align:center;
+    
+}
+p{
+   text-align: center;
+}
