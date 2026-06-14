@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch the Ball Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+   
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+  font-family: Arial, sans-serif;
+}
+
+#gameArea {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: #eee;
+  border: 2px solid #333;
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+#paddle {
+  position: absolute;
+  bottom: 10px;
+  left: 170px;
+  width: 60px;
+  height: 15px;
+  background: #333;
+  border-radius: 8px;
+}
+
+#ball {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+
+#score {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+</style>
+<body>
+  <div id="gameArea">
+    <div id="paddle"></div>
+    <div id="ball"></div>
+  </div>
+  <div style="margin-top:12px;">
+    <button id="startBtn" style="padding:8px 12px;font-size:16px;">Start</button>
+    <button id="pauseBtn" style="padding:8px 12px;font-size:16px;margin-left:8px;">Pause</button>
+    <button id="restartBtn" style="padding:8px 12px;font-size:16px;margin-left:8px;">Restart</button>
+  </div>
+  <p id="score">Score: 0</p>
+  <script src="Catch_the_Ball.js"></script>
+</body>
+</html>

@@ -4,26 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Form</title>
-    <style>
-.details-container {
-    display: flex;
-    align-items: flex-end; /* Align items at the top */
-    justify-content: space-between; /* Space between text and image */
-    gap: 20px; /* Add spacing between elements */
-    margin-top: 20px;
-}
-.license-details {
-    flex: 1;
-    font-family: Arial, sans-serif;
-}
-.license-photo img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px; /* Rounded corners for a neat look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-    </style>
 </head>
 <body>
     <h1>Driving License Registration Form</h1>
@@ -43,7 +23,9 @@
         <label>Age:</label>
         <input type="number" id="age" required>
         <br><br>
-
+        <label>Date of Birth:</label>
+        <input type ="date" id="dob"required>
+        <br><br>
         <label>Gender:</label>
         <input type="text" id="gender" required>
         <br><br>
@@ -68,6 +50,7 @@
             <p id="p4"></p>
             <p id="p5"></p>
             <p id="p6"></p>
+            <p id="p7"></p>
         </div>
         <div class="photo-container">
             <img id="dp" alt="Profile photo">
