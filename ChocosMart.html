@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoMart</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#fff8e7;
+        }
+
+        header{
+            background:#5d4037;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        header h1{
+            margin-bottom:10px;
+        }
+
+        .cart-box{
+            margin-top:10px;
+            font-size:18px;
+        }
+
+        .search-section{
+            text-align:center;
+            padding:20px;
+        }
+
+        .search-section input{
+            width:300px;
+            padding:10px;
+            border:2px solid #5d4037;
+            border-radius:5px;
+        }
+
+        .products{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+            padding:20px;
+        }
+
+        .card{
+            background:white;
+            border-radius:10px;
+            padding:15px;
+            text-align:center;
+            box-shadow:0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .card h3{
+            margin-top:10px;
+            color:#5d4037;
+        }
+
+        .card p{
+            margin:10px 0;
+            font-size:18px;
+        }
+
+        .card button{
+            background:#8d6e63;
+            color:white;
+            border:none;
+            padding:10px 15px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        .card button:hover{
+            background:#5d4037;
+        }
+
+        footer{
+            background:#5d4037;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍫 ChocoMart</h1>
+        <p>Sweet Moments Delivered To Your Doorstep</p>
+
+        <div class="cart-box">
+            Cart Items: <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="Search Chocolates..." onkeyup="searchProducts()">
+    </section>
+
+    <section class="products" id="productContainer">
+    </section>
+
+    <footer>
+        <p>© 2026 ChocoMart | Chocolate E-Commerce Website</p>
+    </footer>
+
+    <script>
+        let cartCount = 0;
+
+        const chocolates = [
+        {
+            name:"Dairy Milk Silk",
+            price:180,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSda5D5LYC2I3UKseRzzwvu78hsSZnXKGw3JB2JPRHzwg&s"
+        },
+        {
+            name:"KitKat",
+            price:40,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfpSin51fZeiKowaZ6srD_ivS8Yj5nVSMI0NwgZcEuQ&s=10"
+        },
+        {
+            name:"Five Star",
+            price:20,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_tIM-vj6r5M2dEv3ECzs2nJ80bXPBq58S1Xpgn_9UHg&s=10"
+        },
+        {
+            name:"Perk",
+            price:10,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3607Y_g8ef4qVaYZoYim5HQ3SCtruipBoc8makiQGCQ&s=10"
+        },
+        {
+            name:"Munch",
+            price:10,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1bmsD9EiaL-A2qYma5NoNUoRilO5AeMi46CuFhQcm5g&s=10"
+        },
+        {
+            name:"Snickers",
+            price:50,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSheveoWd5quSOje6ACC-cVb_OzVQsUa8xW0Bcr7JTvKA&s"
+        },
+        {
+            name:"Ferrero Rocher",
+            price:450,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0UahG6R3nEXDrpDQuPq_xYMipvXxIIZHHViq9xZwA3w&s=10"
+        },
+        {
+            name:"Toblerone",
+            price:350,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpuc6XBXgI-SBXewjzMy5aP6h-WrIdRzWW56uC6uTlOw&s=10"
+        },
+        {
+            name:"Dark Chocolate",
+            price:200,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-iC-V14hYDcL59Tyq3Q2guh59dKSSy3fJc6s7cGASOw&s=10"
+        },
+        {
+            name:"White Chocolate",
+            price:220,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6vewQJHyPJ-r7ye3EQDo95Yvz_c1hMXc6sshkavu5g&s=10"
+        },
+        {
+            name:"Hazelnut Chocolate",
+            price:250,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRcpLRqPkeOaPSUExeQFBKxg9TETd2TPNqwGeml-myxA&s=10"
+        },
+        {
+            name:"Almond Chocolate",
+            price:240,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq56VVsOMB7BajYqtFd1pAkChHZaX3vVCykpGjpo6ZkA&s=10"
+        },
+        {
+            name:"Chocolate Truffles",
+            price:300,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN7t43GIzbbdasXpmn0uMjy0Nfl4852-wyA3OOeVvoKw&s=10"
+        },
+        {
+            name:"Premium Gift Box",
+            price:1000,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Ve3Y6rfHfkAenaXZegek_BoI3r3LKwPxzuZWqEDxzQ&s=10"
+        },
+        {
+            name:"Bournville",
+            price:120,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDHGWU8XuYHBckQR-_Y6FRm0XNBMIfbXZjoRo4Me7_bFaSfW56EQGuTFo&s=10"
+        },
+        {
+            name:"Lindt Excellence",
+            price:500,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWurlf3Z7G68CQ3fuNNRZBEmIDKNxeJR-kLEIjQsLeEg&s=10"
+        },
+        {
+            name:"Galaxy Chocolate",
+            price:150,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuDK3WGMxC-XMuhqGh7Sjc_PWUEhSPgHXJdQ4P9Jnqw&s=10"
+        },
+        {
+            name:"Hershey Bar",
+            price:130,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ--4yphICnRkNhhMAqZEwRBKHCPoyedGf0AhqtSe2Vlg&s=10"
+        },
+        {
+            name:"Mars Bar",
+            price:90,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs5XfoyZ5oPuf2st2Z6d1aoXztxvQjdpax-svn_T19ag&s=10"
+        },
+        {
+            name:"Nestle Classic",
+            price:70,
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFvedES4m1p-zcR_4eUuOusfUD_Jx93QuaBhdinnucwA&s=10"
+        }
+        ];
+
+        function displayProducts(products)
+        {
+            const container = document.getElementById("productContainer");
+
+            container.innerHTML = "";
+
+            products.forEach(product => {
+                container.innerHTML += `
+                <div class="card">
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>₹${product.price}</p>
+                    <button onclick="addToCart()">Add To Cart</button>
+                </div>
+                `;
+            });
+        }
+
+        function addToCart()
+        {
+            cartCount++;
+            document.getElementById("cart-count").innerText = cartCount;
+        }
+
+        function searchProducts()
+        {
+            let searchText = document.getElementById("searchInput")
+            .value.toLowerCase();
+
+            let filtered = chocolates.filter(product =>
+            product.name.toLowerCase().includes(searchText));
+
+            displayProducts(filtered);
+        }
+
+        displayProducts(chocolates);
+    </script>
+    <section class="products" id="productContainer">
+</section>
+
+<footer>
+    <p>ChocoMart | ChocoMart@gmail.com</p>
+    <p style="margin-top:10px;">
+        🍫 Thank You for Visiting ChocoMart! We hope to make your day sweeter. Visit Again! 😊
+    </p>
+</footer>
+
+<script>
+    // Your JavaScript code here
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
