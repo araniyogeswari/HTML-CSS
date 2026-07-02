@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua World</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background:#87CEFA;
+        }
+
+        .navbar-brand{
+            font-weight:600;
+            text-transform:uppercase;
+            letter-spacing:0.08em;
+            padding:0.35rem 0.85rem;
+            border-radius:0.6rem;
+            margin-right:0.5rem;
+            color:#ffffff;
+            background:rgba(255,255,255,0.12);
+            transition:background 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar-brand:hover{
+            background:rgba(255,255,255,0.22);
+            transform:translateY(-1px);
+            text-decoration:none;
+        }
+
+        .card{
+            border:none;
+            border-radius:15px;
+            overflow:hidden;
+            transition:0.3s;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+            height:100%;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+            box-shadow:0 10px 25px rgba(0,0,0,.18);
+        }
+
+        .product-img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+            background:#fff;
+        }
+
+        .card-title{
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .price{
+            color:red;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .btn-cart{
+            width:100%;
+            border-radius:30px;
+            margin-top:auto;
+        }
+
+        .card-body{
+            display:flex;
+            flex-direction:column;
+        }
+
+        h1{
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">AQUA MART</a>
+
+        <div class="ms-auto">
+            <a class="navbar-brand" href="#">Shop</a>
+            <a class="navbar-brand" href="#">Wishlist</a>
+            <a class="navbar-brand" href="#">Orders</a>
+            <a class="navbar-brand" href="#">Profile</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+
+    <h1 class="text-center mb-5">AQUA WORLD</h1>
+
+    <div class="row g-4">
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/66/dd/30/66dd3026631b6bb874c0d22762475aad.jpg" class="product-img" alt="Betta Fish">
+                <div class="card-body">
+                    <h5 class="card-title">Betta Fish</h5>
+                    <p>Vibrant freshwater fish with beautiful flowing fins.</p>
+                    <div class="price">₹899</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/84/ec/e0/84ece0902859a00f0930851f5c2a2cef.jpg" class="product-img" alt="Gold Fish">
+                <div class="card-body">
+                    <h5 class="card-title">Gold Fish</h5>
+                    <p>Classic bright goldfish for a lively aquarium setup.</p>
+                    <div class="price">₹1,299</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/12/db/85/12db857278c11c704d224fb3f7cb04a5.jpg" class="product-img" alt="Clown Fish">
+                <div class="card-body">
+                    <h5 class="card-title">Clown Fish</h5>
+                    <p>Colorful marine fish for a reef-style tank.</p>
+                    <div class="price">₹2,499</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/0d/2c/ac/0d2cac08cc4f4a6be0acb3896d21841b.jpg" class="product-img" alt="Glass Aquarium">
+                <div class="card-body">
+                    <h5 class="card-title">Glass Aquarium</h5>
+                    <p>Spacious and durable tank with a modern finish.</p>
+                    <div class="price">₹4,999</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/31/7d/b7/317db7937b73af17fbe3f4d58e9eea1d.jpg" class="product-img" alt="Fish Food">
+                <div class="card-body">
+                    <h5 class="card-title">Fish Food</h5>
+                    <p>Balanced nutrition for tropical and ornamental fish.</p>
+                    <div class="price">₹399</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/65/8a/dd/658add080bf1695bd2faaaacb0d3da9d.jpg" class="product-img" alt="LED Light">
+                <div class="card-body">
+                    <h5 class="card-title">LED Light</h5>
+                    <p>Energy-efficient lighting for healthy plant growth.</p>
+                    <div class="price">₹1,199</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/75/89/04/758904ac7a9afc1afbf94e1b8f4f6a47.jpg" class="product-img" alt="Water Filter">
+                <div class="card-body">
+                    <h5 class="card-title">Water Filter</h5>
+                    <p>Quiet filtration system that keeps water crystal clear.</p>
+                    <div class="price">₹2,299</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/2d/27/fd/2d27fd7c011de2631cf5b749fdb3a590.jpg" class="product-img" alt="Aquarium Plant">
+                <div class="card-body">
+                    <h5 class="card-title">Aquarium Plant</h5>
+                    <p>Live aquatic plant for a natural, healthy habitat.</p>
+                    <div class="price">₹349</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/22/d0/8d/22d08d5433eb1505ca6f6e7631e2ee33.jpg" class="product-img" alt="Decor Castle">
+                <div class="card-body">
+                    <h5 class="card-title">Decor Castle</h5>
+                    <p>Decorative castle piece for a fun underwater theme.</p>
+                    <div class="price">₹799</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/4d/f8/24/4df824a657425ad8ab64b472d142d74f.jpg" class="product-img" alt="Gravel Stones">
+                <div class="card-body">
+                    <h5 class="card-title">Gravel Stones</h5>
+                    <p>Smooth gravel for a natural tank base.</p>
+                    <div class="price">₹499</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/7c/27/a6/7c27a6e828c45156ac3c025388b9fcb4.jpg" class="product-img" alt="Thermometer">
+                <div class="card-body">
+                    <h5 class="card-title">Thermometer</h5>
+                    <p>Accurate digital thermometer for safe water monitoring.</p>
+                    <div class="price">₹599</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/07/18/b4/0718b41fe7ed37128446cc82fa21d6fd.jpg" class="product-img" alt="Air Pump">
+                <div class="card-body">
+                    <h5 class="card-title">Air Pump</h5>
+                    <p>Reliable aeration pump for oxygen-rich water.</p>
+                    <div class="price">₹1,099</div>
+                    <button class="btn btn-primary btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

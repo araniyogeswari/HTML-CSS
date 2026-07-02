@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST LINES | Premium Bikes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+        }
+        .bike-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="#"><i class="bi bi-lightning-charge-fill"></i> FAST LINES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shop">Bikes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning position-relative" href="#">
+                            <i class="bi bi-cart3"></i> Cart
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">FEEL THE THRILL OF SPEED</h1>
+            <p class="lead mb-4">Discover our exclusive collection of 15 high-performance superbikes and cruisers.</p>
+            <a href="#shop" class="btn btn-warning btn-lg fw-bold px-4 py-3">Explore Inventory</a>
+        </div>
+    </header>
+
+    <main class="container my-5" id="shop">
+        <h2 class="text-center fw-bold mb-5">Our Premium Collection</h2>
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Apex Predator 1000">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Apex Predator 1000</h5>
+                        <p class="card-text text-muted flex-grow-1">A track-ready beast engineered for ultimate speed and precision cornering.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$18,499</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Shadow Cruiser V2">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Shadow Cruiser V2</h5>
+                        <p class="card-text text-muted flex-grow-1">Low, loud, and luxurious. Perfect for endless highway miles and weekend getaways.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$15,200</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Urban Stealth 650">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Urban Stealth 650</h5>
+                        <p class="card-text text-muted flex-grow-1">Lightweight design paired with aggressive torque for navigating the city grid.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$8,999</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="HyperSport X">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">HyperSport X</h5>
+                        <p class="card-text text-muted flex-grow-1">Aerodynamic bodywork covering a brutal 200-horsepower inline-four engine.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$21,500</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Terra Explorer">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Terra Explorer</h5>
+                        <p class="card-text text-muted flex-grow-1">Built to handle mud, gravel, and asphalt alike with adaptive suspension.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$13,750</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Vintage Roadster">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Vintage Roadster</h5>
+                        <p class="card-text text-muted flex-grow-1">Classic 1970s aesthetics blended perfectly with modern fuel-injected reliability.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$11,200</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Neon Blitz E-Bike">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Neon Blitz E-Bike</h5>
+                        <p class="card-text text-muted flex-grow-1">Silent, clean, and instant torque. The future of two-wheeled performance.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$24,999</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Iron Horse 1200">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Iron Horse 1200</h5>
+                        <p class="card-text text-muted flex-grow-1">Heavyweight heritage cruiser featuring a thumping V-twin powerplant.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$16,800</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Alpine Tourer">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Alpine Tourer</h5>
+                        <p class="card-text text-muted flex-grow-1">Equipped with integrated luggage racks and heated grips for cross-country journeys.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$19,100</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Crimson Comet">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Crimson Comet</h5>
+                        <p class="card-text text-muted flex-grow-1">Striking red livery wrapped around a high-revving triple engine frame.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$10,450</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Scrambler Renegade">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Scrambler Renegade</h5>
+                        <p class="card-text text-muted flex-grow-1">Knobby tires and high exhaust pipes designed for off-grid playfulness.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$9,800</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cafe Racer Pro">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Cafe Racer Pro</h5>
+                        <p class="card-text text-muted flex-grow-1">Minimalist design meets clip-on handlebars for that authentic retro feel.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$12,600</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Track Star RR">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Track Star RR</h5>
+                        <p class="card-text text-muted flex-grow-1">Carbon-fiber fairings and elite electronics suite for competitive racing.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$29,000</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Desert Storm Dual">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Desert Storm Dual</h5>
+                        <p class="card-text text-muted flex-grow-1">Unmatched endurance capabilities built specifically to dominate sand and dunes.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$14,300</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm bike-card">
+                    <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Metro Naked 300">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Metro Naked 300</h5>
+                        <p class="card-text text-muted flex-grow-1">The perfect entry-level streetfighter with aggressive posture and easy handling.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-4 fw-bold text-dark">$5,499</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2 fw-bold text-warning">FAST LINES</p>
+            <p class="small text-muted mb-0">&copy; 2026 FAST LINES Inc. All real motorcycle imagery sourced dynamically via Unsplash.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

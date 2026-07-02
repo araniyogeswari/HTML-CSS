@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kitchen Elegance - Modern Decor Collection</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f8f5ef;
+padding:20px;
+}
+
+.heading{
+text-align:center;
+background:#6d4c41;
+color:white;
+padding:20px;
+border-radius:12px;
+margin-bottom:25px;
+}
+
+.heading h1{
+font-size:36px;
+}
+
+.heading p{
+margin-top:8px;
+font-size:18px;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.card{
+width:250px;
+background:white;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+padding:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.card h2{
+margin:10px 0;
+font-size:20px;
+color:#333;
+}
+
+.price{
+color:#2e7d32;
+font-size:20px;
+font-weight:bold;
+}
+
+.rating{
+color:orange;
+margin:8px 0;
+}
+
+button{
+width:100%;
+padding:10px;
+margin-top:8px;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+.add{
+background:#6d4c41;
+color:white;
+}
+
+.buy{
+background:#43a047;
+color:white;
+}
+
+.footer{
+text-align:center;
+background:#6d4c41;
+color:white;
+padding:20px;
+margin-top:30px;
+border-radius:12px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="heading">
+<h1>🏡 Kitchen Elegance 🏡</h1>
+<p>Modern Kitchen Decor Collection - 2026</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8sT_ULYmJz7GxvLmjSMfNSvgyuHokVdyMwuj9aB0TSQ&s=10">
+<h2>Smart LED Under Cabinet Light</h2>
+<p class="price">₹1,299</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBdLY46SJ-gCDMWNdo64R0a4uwDDA_i8ImdVf9Lc6mYA&s=10" alt="Self Watering Herb Planter">
+<h2>Self-Watering Herb Planter</h2>
+<p class="price">₹899</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8WwmNlTPuj_PWqrBVg3bOu8tLEMDRhqzbavyCbVyl0w&s" alt="Coffee Station Set">
+<h2>Premium Ceramic Coffee Station Set</h2>
+<p class="price">₹2,499</p>
+<p class="rating">⭐⭐⭐⭐⭐ (5.0)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9SUplJh5N0TAsCbQCCI4ZSQFz8h_NbCfo9p-T3xKcQ&s=10" alt="Wooden Shelf">
+<h2>Wooden Floating Kitchen Shelf</h2>
+<p class="price">₹1,799</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyrqIIwwwt8qyt83mMpeT8FcA4ZnwJLQquywy_OB7OwQ&s" alt="Fruit Basket">
+<h2>Modern Metal Fruit Basket</h2>
+<p class="price">₹999</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu70hL06j22WNtyVAsjwX50v6ABmJAyoaLKWXoNEvuAg&s=10" alt="Glass Flower Vase">
+<h2>Decorative Glass Flower Vase</h2>
+<p class="price">₹1,499</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHF5zlSWlBJEdy6KFrxF3_AOZ2GebCgqAv_Dm4G7a2-A&s=10" alt="Digital Kitchen Clock">
+<h2>Minimalist Digital Kitchen Clock</h2>
+<p class="price">₹1,699</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZI7Cz3SKk-f3aQvyN2DRpr73BhtkLzbpynpQ5vOJf-Q&s" alt="Ceramic Cookie Jar">
+<h2>Luxury Ceramic Cookie Jar</h2>
+<p class="price">₹1,199</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSJPVO3iyeoBrL_vPWOpFajNT-Nr9i5TzoY0pCTYZDw&s=10" alt="Spice Organizer">
+<h2>Bamboo Spice Organizer Rack</h2>
+<p class="price">₹1,599</p>
+<p class="rating">⭐⭐⭐⭐⭐ (5.0)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6nT3aEWtDDmKRtR65Gk3odosKj-T4RTwJJHiyATU8AQ&s=10" alt="Marble Serving Tray">
+<h2>Marble Serving Tray</h2>
+<p class="price">₹1,899</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Q3kFezJWscfwQMyS_ts9cDzDmBhkucaAYoq3arl6sQ&s=10" alt="Hanging Indoor Plant Pot">
+<h2>Hanging Indoor Plant Pot</h2>
+<p class="price">₹799</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1iRXJ9EWHERZkxTk-KNwiHfjjpvwFmnxf0UdIre481w&s=10" alt="Aromatherapy Candle Set">
+<h2>Aromatherapy Scented Candle Set</h2>
+<p class="price">₹999</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGZHM2T9Vg-J4i_CXoSwatswk2lR4rKKlLv5KxdLZIA&s=10" alt="Storage Basket Set">
+<h2>Woven Storage Basket Set</h2>
+<p class="price">₹1,299</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_y0j4N-Xh_-eyE3G7GlTKLD6EZNDLBaJgQmOc2n7dg&s=10" alt="Modern Pendant Kitchen Light">
+<h2>Modern Pendant Kitchen Light</h2>
+<p class="price">₹3,499</p>
+<p class="rating">⭐⭐⭐⭐⭐ (5.0)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiX1JwTnkoVhfhYfTHSm5GwheQR14zMVRd-J1obWrTxg&s=10" alt="Decorative Kitchen Wall Mirror">
+<h2>Decorative Kitchen Wall Mirror</h2>
+<p class="price">₹2,299</p>
+<p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+<button class="add" onclick="addCart()">Add to Cart</button>
+<button class="buy" onclick="buyNow()">Buy Now</button>
+</div>
+
+</div>
+
+<footer class="footer">
+<h2>🏡 Thank You for Visiting Kitchen Elegance! 🏡</h2>
+<p>Decorate your dream kitchen with our modern collection.</p>
+<p>✨ Happy Shopping! ✨</p>
+</footer>
+
+<script>
+
+function addCart(){
+    alert("Item added to cart successfully!");
+}
+
+function buyNow(){
+    alert("Thank you for your purchase!");
+}
+
+</script>
+
+</body>
+</html>

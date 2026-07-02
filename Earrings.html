@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earring Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sunday.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">💎 Earring Store</a>
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a class="btn btn-warning ms-3" href="#cartSummary">🛒 Cart <span class="badge bg-dark text-white ms-1">2</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4" id="categories">
+        <div class="text-center mb-4">
+            <h1 class="display-6 fw-bold">Elegant Earrings Collection</h1>
+            <p class="text-muted">Premium earrings for every style and occasion.</p>
+        </div>
+
+        <h3 class="mt-4 mb-3">1. Stud Earrings</h3>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSf_1ex8P60tJkgplWtcRz_KfoVZQGO0vMPqKZsUTLXw&s=10" alt="Gold Stud">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Gold Stud</h6>
+                        <p >₹799</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0cB8AlN2LOlUI8YhPs4_g5MBDQ72SVBeDNKdemdagA&s=10" alt="Diamond Stud">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Diamond Stud</h6>
+                        <p class="text-danger fw-bold">₹1600</p>
+                        <label class="btn btn-outline-warning mt-auto w-100">
+                            <input type="checkbox" class="cart-toggle" id="diamond-stud">
+                            Add to Cart
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7C8d-NznLxUzGqhQEX_QtVXDZN5LlUNiQuu5zXUTF4Q&s=10" alt="Pearl Stud">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Pearl Stud</h6>
+                        <p class="text-danger fw-bold">₹600</p>
+                        <label class="btn btn-outline-warning mt-auto w-100">
+                            <input type="checkbox" class="cart-toggle" id="pearl-stud">
+                            Add to Cart
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW7Wo8YKzWX0obCa418niNGB_1FOLU0cjpuvz4uLhk8w&s=10" alt="Silver Stud">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Silver Stud</h6>
+                        <p class="text-danger fw-bold">₹2999</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhHDs9hAHn4BW8WavR3FN9Mn_rLJmFQt8BgH15tb0Yw&s=10" alt="Crystal Stud">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Crystal Stud</h6>
+                        <p class="text-danger fw-bold">₹6200</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQh9g1aQ5wXQS228N047FD373bbbgXaeZAAN_tVjRcw&s" class="card-img-top" alt="Floral Stud">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Floral Stud</h6>
+                        <p class="text-danger fw-bold">₹569</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-4 mb-3">2. Hoop Earrings</h3>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS9ACrJuGZ0xCwP2x0jIbuVO-TyoJBBSHsVBKWtOzmJLXWhwUy61hmAIEpeMkm-jwImjak99bQPGzfDO4LN6_8w-Jt2goRLAJ3CoJEYZdA-pjpW1WuFfyruVSF0HRh_2obL4sWARR5PwdJa&usqp=CAc" alt="Small Hoop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Small Hoop</h6>
+                        <p class="text-danger fw-bold">₹749</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTj0k87pJd5G8T5eCmofW554mlTkn92Bf8lHAZbqjYQiFlIRjUBilSuPtXfIOIMAKqwkXcdIQaccPcFuz6x4rOgmL8HtKcuUy8oYqCE60EFmSK91IXKYCedSJIDTYPEZTTBg1iPaPCDzg&usqp=CAc" alt="Large Hoop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Large Hoop</h6>
+                        <p class="text-danger fw-bold">₹319</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/51+JQQZXeaL._AC_UY1100_.jpg"  alt="Thick Hoop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Thick Hoop</h6>
+                        <p class="text-danger fw-bold">₹899</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://media.mango.com/is/image/punto/37091482-OR-900?wid=2048" class="card-img-top" alt="Thin Hoop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Thin Hoop</h6>
+                        <p class="text-danger fw-bold">₹749</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRRqq1RxR2HoX-77Pv5sseyDWwGEAdKhLWepNMdcA0RYLbosHz-Y6HiIAgnI7Mpi0q9fFTV7voEYril2MWIKFuXu_re7Agj3BkKb8_O9kE15S08TqyEXYihRdCMmSSQo4g4_6QJ1FY&usqp=CAc" class="card-img-top" alt="Diamond Hoop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Diamond Hoop</h6>
+                        <p class="text-danger fw-bold">₹27865</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/31um1JVL-tL._AC_UY1100_.jpg" class="card-img-top" alt="Twist Hoop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Twist Hoop</h6>
+                        <p class="text-danger fw-bold">₹3000</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-4 mb-3">3. Drop Earrings</h3>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQcsgeDFWMq3xUNG8gwfHcV79fX8FlzmR9fDC3bdPkyT07fdYrhaCRmJg5H_i9Cc08GdJe28hLxxnaykQtmNcEaQHhGmyvKAJXVky71Rl_ClQJZnH7JCNRUtK7FcIDgAJPfJ1gFDnxl&usqp=CAc" alt="Simple Drop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Simple Drop</h6>
+                        <p class="text-danger fw-bold">₹668</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://krishnapearls.com/cdn/shop/files/DSC_8871copy2.jpg?v=1757164343&width=1200" class="card-img-top" alt="Pearl Drop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Pearl Drop</h6>
+                        <p class="text-danger fw-bold">₹1518</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.meesho.com/images/products/691491628/veap1_512.webp?width=512" class="card-img-top" alt="Chain Drop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Chain Drop</h6>
+                        <p class="text-danger fw-bold">₹166</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://shop.southindiajewels.com/wp-content/uploads/2024/08/Victorian-Green-White-Stone-Drop-Earrings-scaled.jpg" class="card-img-top" alt="Stone Drop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Stone Drop</h6>
+                        <p class="text-danger fw-bold">₹1450</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8hoK7qy96KzhPU2pTyFqRBWLPHW0P7irs3Co_DtOlbg&s=10" alt="Floral Drop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Floral Drop</h6>
+                        <p class="text-danger fw-bold">₹3800</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/51irPy012sL._AC_UY1100_.jpg" class="card-img-top" alt="Beaded Drop">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Beaded Drop</h6>
+                        <p class="text-danger fw-bold">₹7800</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-4 mb-3">4. Dangle Earrings</h3>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTeQ1Ff16f5APQ9Pmr6Bo_oXLmhJUJSX8aQkQ1ffGEo1QugFi8ZmUgHa6LeK4504EqaLQCDBZb0Xl5YH-qCciCeepXZmElQ4w" alt="Long Dangle">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Long Dangle</h6>
+                        <p class="text-danger fw-bold">₹849</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638" class="card-img-top" alt="Crystal Dangle">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Crystal Dangle</h6>
+                        <p class="text-danger fw-bold">₹599</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/91W7xYR6wlL._AC_UY1100_.jpg" class="card-img-top" alt="Layered Dangle">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Layered Dangle</h6>
+                        <p class="text-danger fw-bold">₹799</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGg3DcrwYUadyMfqRlTHgObIzNhmOoe5Fi-rCPh4VfL_JJVpbwnl_qqA&s=10" class="card-img-top" alt="Feather Dangle">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Feather Dangle</h6>
+                        <p class="text-danger fw-bold">₹730</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSe2VkKMzcjRtlZAeEz5unMQ94_x7DLglfWPK2GfRJaGLs7FYfxpqboi3hjMkzbdhzaVHqyrHrwHd-irJqSXuMwTzi1nkvAD7LXW4ys07e5&usqp=CAc" alt="Gold Dangle">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Gold Dangle</h6>
+                        <p class="text-danger fw-bold">₹12999</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://krishnapearls.com/cdn/shop/files/DSC_7006_copy.jpg?v=1756199883&width=1200" class="card-img-top" alt="Silver Dangle">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Silver Dangle</h6>
+                        <p class="text-danger fw-bold">₹5809</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-4 mb-3">5. Chandelier Earrings</h3>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvSuCZRUoGLZ_C5x_mSmmKwzsMCm9cX3YmZ4_Sha3ww&s=10" class="card-img-top" alt="Classical Chandelier">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Classical Chandelier</h6>
+                        <p class="text-danger fw-bold">₹4900</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Stone Chandelier">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Stone Chandelier</h6>
+                        <p class="text-danger fw-bold">₹1799</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTENdA8bdweY6No-_Pb3zOGdp-YcVTXwXt-hZS7qDPLiA&s=10" class="card-img-top" alt="Bridal Chandelier">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Bridal Chandelier</h6>
+                        <p class="text-danger fw-bold">₹19990</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK65kkpzu9yKs9BuwKuRzeAXxYcX13CmC559FL38IWLw&s=10" class="card-img-top" alt="Gold Chandelier">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Gold Chandelier</h6>
+                        <p class="text-danger fw-bold">₹19604</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgQ9El2HRnJSA9RE67hHHBSQmj8aUzOMiyvZIV5Tw1cQ&s=10" class="card-img-top" alt="Pearl Chandelier">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Pearl Chandelier</h6>
+                        <p class="text-danger fw-bold">₹24000</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Multi-layered Chandelier">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Multi-layered Chandelier</h6>
+                        <p class="text-danger fw-bold">₹46000</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+    <h3 class="mt-4 mb-3">6.Huggie Earrings</h3>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQERNb1qUBlp_XFgUZTErCvatM_Jm8X3l3w0Jq42YhW0Z81ob1IEL2VsVr05kjW66ynZJi4Ta_mL_h50hyEBvifMnIPkYaWPK9DBxc1BjuPMJuZQjfflGnSj1ZVU4RX5Xy4q-o&usqp=CAc" alt="Classical Chandelier">
+                    <div class="card-body d-flex flex-column">
+                        <h6>plain Huggie</h6h>
+                        <p class="text-danger fw-bold">₹4900</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTLYwxKYdStYGr6nepif_KPPDAyi55xZ0kKgSI2KRoRWA2Ir7ugbxvQp69_N-CkP5JSZlDicr98LsCU48gyO9f1qDBf8r3sNjb_eSuPKRODr7ieiLD7ukiCBo0rFDvw2UUNztgURvaV&usqp=CAc" alt="earrings">
+                    <div class="card-body d-flex flex-column">
+                        <h6>Diamond Huggie</h6>
+                        <p class="text-danger fw-bold">₹1799</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADrbWV0YQAAAAAAAAAhaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAAAAAAAOcGl0bQAAAAAAAQAAAB5pbG9jAAAAAEQAAAEAAQAAAAEAAAETAAAl0wAAAChpaW5mAAAAAAABAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAABqaXBycAAAAEtpcGNvAAAAFGlzcGUAAAAAAAABwgAAAcIAAAAQcGl4aQAAAAADCAgIAAAADGF2MUOBAQwAAAAAE2NvbHJuY2x4AAIAAgAGgAAAABdpcG1hAAAAAAAAAAEAAQQBAoMEAAAl221kYXQSAAoKGGI4PBYIEBA0IDLCS0SAAKKKKFC0gOquS88WjXHT76G4O1gNxbDM3pMcgXbqTZdLbBiMrNStgjzfCFQsFf5skV6cxhCNE9oYU9B3Yj+N+QxVaRPkhvzDGN1KLvHAPhpNwyjEgi2Sf50bbhq4Rx8OV43ELKUjg7vf1+94UqV0RTLqkcUsQCMVeDvgMsyM+b92d73z6JabOBUCrv3EWyMHa/1749+ha+jaUfM8MdkxWZGrqVFcunZW0ulneSgkYi3BvhmiYpRymJFkFH8exnRN2ZVzDSKwoe8WZ0B5INCtwJeX/qrXaXq/w7S/pBh0C1hExC4EG0uUiBZtGkvMTEC3UgJ6RLGt9ZBKe3iRNsS4fUujr8Tf9t2GraW3Ma9kkGFsVP0UTGo/zUhZplRH4yxqfPaoU+p6i/nFcAmWSMfpwItE+v8wRko9t3K8fOwpIA0XtIlvfbhWabvId+RLGApKuGLv24gic8/dJ1Esx5pe9whKRoa+lDQ2tLnomFURRn8nGekBIDNGzVaYWbxBvhPuhKSijasoZWW0Gx5TYfoQJkahE3vq9u5Ndq3Sm2D+T+E8j+MfY2WcgRxk/v1euxBLASbfmN3xWhAhe+fSVZUuSSwKTyhz6Alsn1SspLVWeLn8JBN13FwQqj5B4rCVUwlDqc7oywlVq+MZfBIo/F0+siAgxPOzF2EFyY6jcIXgISJ6R0QT0B+on4kigRgjbezeB2WzOU7asVwE29bvyQx4cPS25fpptvMI4X5Z5+CrBbSH5jcuBPH6dRS3LGtF3o7uEwJMBL0cU1FJrBoymndqWQLe/Laj82ZQbk5UpDhinRJVYs/WiW4Oqhu5AvkxkgEu6FtTvFIURu38AVk78vmH64Z/JutYRFwANdiBsmtj9qJrfTPVKuZmQ7rfHMDFJ67LblQuibwinIILjxEEh9IOU7pboA86QtTasFPLuLiC6DB0GMHuMDIkLmZEYcMokhTo+kQddVv4ujIn6LUjl7aHY4u8XwndhquyZYDbHrIn/E2Wg2o7QLMnSw+9v8i+73pzl8+PvCRrozZJHOFWliZ+JqPsPMNtOU6V3bvfAotcDaVw5tlUXorF5WhuGJ3eDWpGhnCgn0+mYDeilafTwl1cNNgQ2DuVtS2eiox05cqxSIRVW+w8YzOY7t2V+Of5CMjYbkn6pLdReGLayUjUM86qWe8c2ApmfehXyvGFmwUwCQOSbaWaRLHf+fREOo9Y1kpuSZ6B7YOWDMreuevk+Wu3+jNbCxjek8PGq6uWwyI5npM1W4h+PILhZ0LG168919OvTELRp/GKLq8XzfEBceUvaFy315KDo2igFSWvWuizOp80+coTmjaRavRWQ8TeIEBdJ30jEXkuc2jtQPejd37wQUHlyfZGFMIk7WjZllLPcnhelA8+aAKN7jz5eY+LAiGl9fDU2nWRg8152w01a6IB/xuBgyV8gjJE8h4Q7z7y0CkVlaIzBt/4VtJCBNLuyUThETwrrWlK8CWOAcg4bLEGX1w7j39/GPPu5HZNycrWUEAdUI6WEu7wosozPsQ+Iis7Ly5p56etCqCpFmY9DwOr28LobuyCPn/aHEUdZ7hu05BVUWK6eZBNsZFPDtyInLQLwr1r/io889pIzHhGxUkvIIx17umE49hDwhCvU3mxaXXC8htDXLGiefUJxLrgVPm9m4lnFsPoaKTyQ6unNPEZf/T+BULWdzN/nc0JS2Ill8zPns65LGK/1TKfJEDNe2nu+tEcDFG5mG1nRGSqkG3Gpc7qpcLOJmI7uq3n2NjXI88fx+CPmW+ueMfKKuYUtdsffT753LJTXEGKIdHx6zrr6uv18uCwLUMiZUAcTE0/Qv4TaJu6ipmikvtA/9y9Ko/clD6kN1pkT+/EvtZ4ac3ysAJPS9Hu9jnSd6qDHSELqkFbBOyk3k2ec/fTLnYW/gMfvw1CMeskflvQr25h+yd+TgPtp5NSkUNJdebZD+qF4e0cBWxucjM9Tj8RFUYAZI5an4X7TlaAUmMH0aZtn5EvphIlT9Rty1W+qPce5jsSp/Hx7XaNo4+nfHO3arCN/bPK9xJ91UrH31XgPx4ilr0I7rs/hMyw9hK2AgYWxwdgUjlQftQgpxgon3STGOnsBs3r7/h00XxvI8mRPo3u5uAfv/6ypk8lBCXPaDqU+DRsq+eAp93AMU8j1IoDP4CW5fX443yJ/gGWnSmBtWk0ToK6JRKLQv9Iu8rStMW6Mr/JcXT1r8g43qlkJAcMtuMSt5QP7rqP6XIh3sSI8wceX/ESsu0ZP029tcwycxSqoXo8ZYDjgxij4zcwvXJLkgjaORg2SrXQ/aJVhACU+8w2Yb3NfEEwwyHQggaNd3mb8BlGeY+ZbBkJBUFhB0mGLmwu6Z5d90ngbv/8cYAXKvRC5PuU6C3NMk7T8mGLB1OrFzYFd1uF1nyn996Bfx1NYYg3+9WNLVv+lRxAvDpJPZv6yDXlW3yEL/Rt2b3MJrQfKGQuxB+0aaS7ol8yAmgUwq6o3T4sSr5bl5UL8Hmt4R5biCVpaD4tE9ugORv/VxpKfHzFt0hM/6VC4qeEOMstKU30HvudGUyktlDER5ikfyI/+wbE1Jczce74pbPDw5eiR3auu1tdR6VJn2DsfWr6TrGB39yqYNeqVArnzFyNPfcaDxe2g//G7JhRwd8j9aS7n4f5VrxYDQi+GVpsdSV0OE1c9h6psqNm5AswKO4VwvObnSdNb2TTTzpehRe8eAjLKUpRryrXxIdmxCkKAX1aDMjGBCiVB62etKeI2IB4AryWhmjTBcOch+mtHXS0rbgPNz3rYrgd0r197gJH2iGUDnGM7gAE4dOzRE+++0LgPKzk01ea9DvqElp6fatQtEtZDo5rXgVeWFb53DqFuJc/Q0hStBOM9+kDesDyjony5pWQjHUUgEfHqzl4Ttt+AcqjYFzI/lOogX7T7aQ9tHIAjGCwRWs2RHTguTimSvHO7FqlugFj83swG9+UCoH5Flb7Rs3opAGLwpPMzKfBDI96dck1w6G+iwIeWWBTpOhctcH+DEal63hqRbln7CJ5PbzIYwovNU9/SRQRjXBP56bGvY9nwNmm8IL5VFYHtGhto9GZyaEXwPexDarRoRLxhWjn4qcnypfB0nTWAD+Kz/zke9tsmsUyi4A0sVGaLEQcXRETXRahfX5LUKKHMSxhIgg3ILkz97vrTh6ddLWECr/rnjMCtWQ2I3q4J2PE0RDU54p0U5Q9GubyfKJOX+h9T/axMUfyq7cNSvdY/Zw+rSEFx/HM3qVjki0ZyP+DtW1v+4GkpXHcLywMHFe+Vg0p3hB9u89Qa4tZ+mR9u8rW9zsAG6JB3rwX+7IIr5p+gPgrcbucyrOGHfFTqRvZb3Q3UpK3rfca77J3gRgkNB8aqvAZjikxWUzGzLG9BXlHLveo5VxvMjviheW0DYmNEceY5zmTEh5+7HneNr0Iw41Fff2leJzRPNtdWJ9lwomi9IcaKYH2VIRquSxWfgKMBzIX+XyDJ4STOej93unzm5UcWXlOPOztpbyf1+d1SaU0hAIB9GYMqFhI9bkdutBmiU+YlmrZwta78jngJoqEgJtBnFdhOIVkin9AviB0XJOCYL6vmY59BIa8P7ECboCnBQ+OQchkoviT35Xrln3uLRFdmQVEYVtuN4fznOfGnVm3gS//U7D7eZMZWDALODbLXZ+zOyEki4mn5IKV19SyPITh5pKqiA0vonkWF9hI27v0/VCH0Y9xPIaXlVm8k5Vl1LsJO51xXntc5PxDjcsguAvOdkaAGS+eNj9JdOedb0Lkb2wh8Ja0XryYtT+Ru4zAgPgsCfzeQ2OGmC6W0y/6lHji6/YlwyQpTtEXbHd7noqEf6Q5ddUfvvh+3ai/xSlMD3Hd0qOICmB3S46btZ3yDxmRjWfeC9gsr++oG+WEPsUIGFSbf9KwPfJLPg/FcVP2QkmhdG/vbySeUZspETezBtq0rB80u3QlkkLkW8x+J/hCtmV3Uh9lF5RmxvwTB6DnYQ8dOGTzL6es6Zfp3DEmuogd3zAE+b6JLhxngIbNepw8BAz+dwWFIQBxrxdCrZaE8VEa565aZUIkbNo3yBsycndvpCO6pCyyedt+UZSmdkoalaYVvHcNzf/P10ja/QiSH9rmIgQdM41VwkxQQ2xLDmNtMN2JF+PcGRcjesFvFuviuAewzdLBhCVZSJYa5uwoD20qqDpMEtXSwqUg0AG9eYCOXMTp+z7j/K2loiGWV8IZHd3oYZS5aujArbhce35ekoc6Bj4QS6bp3GoGw1oGSFRei2eH0vls3/df40rJGVO8pfipMcvTclT8ccVqkT9BqsCwe9tSuDeR2A+4PVWgs98diaCJ03TLESdhF9Ew+l9P8kIBDfvdnyFDfsH2nWll7Wk2w4K9Yh7mdat6MvGqoTEIXPSgQtgcyWzLU+4vXa2rcWo91GLkrqYoBacNhEuZjUsjFFq3/wrCpKQxIYe2NQmOf7W8glqNmBz2/Y6O4kRAJeFXFSZIXFTEsofSUHu+6Q7ObzZNez+66Pg8ZsqbszkUyo9o+yulsoHHFwox6KQS1E47wtQGVZ75kCRT0MmN7kTefP8dnHt7KHm6J7q2eKXzL8fYwWAwSIqL53oyGMHD3T9PGvHRi2kuIn8KDZc7kQ7hvTsfz+bUGI64WReM4ZA4EOZVgemJiYcLs9CczmeYx0QA90x9O5tODuzOczjzfkLH0YYQXhrD4XU8HjY71oWWe5M2gnuPOqHzjFN3MEFszMoHGWZnjp/qixlt0u8Zs7bUNRBrx8VjYP8O8m81AQJsWhNiYTfN9zUBcWARxfLhmlRvGZVeQXIJErG7QAP0L3oEuu2akocOkmVL6c9x2GT2G322PNDW8hGwzCWrgSDUv1z8hpoCd0tAVG7fxzwF08s6mYOX1j/3TikFNRO9xiftLYBvKKnEDZSeG3ptp8gmfq0RQ0isjfvzXEj+IDJBH/9sRVs1WPzyCM0aRNHq8mvLV1B1BzBErs+CIiKLkpjZaF57xphWQu79EI2tNrj07que1KALXYDf/OXXogN3/LwUpmDWkDVuwRmZcA4nJz1RtXxgbQg7PckrSeszWMcOlP7+70361n/zmnwyVwMO/kNQhqBGOjQhUZD2YPFba28uMH70dPlzqaMbQeIRcjmcXd+ChYnMw+aq3evm9RgymA/E0cqraBGj4PDfGNFITn0BYt4/8CX8uXEjjUROcWlV/wF+R1oyD9hzI1LPct9+YV7Wa4mY0w71F9nMKomm7O7L9QuSLl+CI5l+DbUJSukpODm8ETbjXHn3y/WWuRqEOejdd+vqKdELyU2CBUHfokVxg4a9/0Lmfo4lPxu47YQVg1RcIhzHo2AEFn88SvObxCjVm0k+84+a3V/Ad86WIQU6ySD4ZnAYGX/6Z9vwhxvwYxFE/i+FodbhfW2YLQuJBRNy80yX0UuZP2eqYoZmMsafMk2XkglXsmrmVawPV/0vnrf5OzHmG+GIj+FYCy9MxFwi28qBiAf7Uhyxkba8Dh0Hxrtm7WQoTlBGy0Z49vH1XNMr96bMQHnKkm9Or9e32ih4WtXGBnJF+hm1MnbKiZCoAGgfdECmLI2CQKEAHujnoGEer+f38gU8+A0yaUnngaOMejIkXpUE9zV8ykAp5cU6yp4ag3cYcg/UUloD05uA867jthk4zk90hCoNtq6Qq6QGkoLK1TdEFUXHVxMYExr8t0iSWYn84Unhukw7GE8xAllsbMptHA4IdXobuv6AsDHEyXAhuz0eI3yEONWj/IN+dQ/JXcyLsoSELMl/UEbtxau/kPGaR38dD2f+7qnZiA7jsiU9wrpOmfr+i6MuQDLWYVDLBONEfyl9Od3ah4cO2BLSt2JTVhYMOTmk59N4kw8vHfxfrslQizpdF5/EiFe14+uoL0lb/YnQSYcaBPkJX8alNMbgedWPCccdJBlrVN0vq0VsXgyLaQ2Bn7sJ8QKRv7PBXGBtyiIz6qkw3e0L7h69m1HzmoWvJkpDGThiY/YwwQS9GcOCiCLNAS56BJ810H2p5NIFLeA6/xA66pY3/LqoRVIT/QmA4xuYrcoglkvv3Y96Y7bp8rn7A+nXyc664waTym6qyrOkAapmjiXaIr1Wi4I8K0r22JiEOvKO9Lqsp6I9ZE8/IJJPXIfRAJSs9VjCMInKZlx9nhxkryi8ZE1znCoYZdwqbWNOZGeaRjYx7Qq/ZI9Y1jl5WqrJHILQ0Rfl5qNg0QYJPF5SzjKhlaXSsYgb9Wh7BR1lt9fY5HPFWQSotQEIbMrLOYXCpvuRSPPuaceaK66FuxbAsVNhTkUSHQKO1ur1nEPCmvgG66cNgFMDgLVbt6H7SPSZCbqvaI6AhzQhClpS3VO72+uy9K0TTkC9b4yArcadG4utv1r1/w4pkEUt0W0dFlv62JYiYiCB71gPtEZZFWK9Qk2CXEWyhZ4KFdwoS66pGL4CcSBoi6JINNkP5gHAEzGy+W+ovw01z8z3GuEK6wEPAWhpVpHZ36l6yPD6mcObzKjgEtOLUhGilpwFj6Bdz/leYcol88GxDc18qMgoFPDK6uTbFg9A2Q4yTjrLaktQbr+uFeseFO2GwiPtinVIsWgJd8pMG5oDCT3YYVPg3s6GD5k9BEsDv1p03NnBZ3i5qm1B5GPQkqXvrhka+aXT6QOkqhsmZnUF2SLXizFzE0MUM3xScvzfyqhUf8jSVw8Rg+dVwVGU5SZZLtZdJLs2t8JA1bz2iyhHSphG+2cVGKcqZFcy+DSF7Pkj44FmJIW6TVACNM5QMrtv+3DIjBwj9UrcRF8T/P7UGOmsoHbLzQ4tox+qkWHCHNwpzUGrXJ1GmNSixAeEXzVh28fgJUXhITu+iHEzB3173FByXdO+Fmb28BYPUc4e/nztov8oguU3L2/kJf/KSD5G4w1qKgiJrkBg1dVxIdVrWd48hSSO6w5kJL1RZaR0Qm3uADXKxshLEm77eG6om5+ztPmYI7ebQyeimkgiMcC8sWo7tKg8VrzsTsKcG2P1Gb/9xIQVKjSjWJJ3Uv3LpwmLUxgAtPJoDQOdXuknE2si0NuQVlHQqL389vvgaw6P1ltkZ8dXGAMLK4OOwl7d9GDRc0IBrXmM1QxHRejjDMziOSVQC4tdiumTB36tolyyOKsWABZARj0lSKd/6+JA2v7y7hHTi2UMEqowFvIEnxNfS3ZMt8YHa5hLybMTLdKodCbGevPPm3UVehNn+ceEIAHb5XujYOWLvyWUJzq7BLix08WzjZ47DI2EbDAG5N/ryTqifgrI62Gxxr50JzhvV1FHdHh52xgV4pzZXjYLsoFzKxZAzclqNWSuqm0vIn3uyLaIimR3qI194uSn1MzASZDEWIldU3KfRrthjPBi+GkWQGEpun05KsK7KRuwynfdu1e9NgRFJZYeN1jhlGxgY8omYL5rkGd4Rm6g4NEXAvTMNHUxeWxxVgSP9ifwa3MZeoUZGX0JEHrONRz//byDtvS5Q7e1X3b5IhICbVVIEL0lqk1N/imkxtDXkgrnR6zhDzAhdFuphXh1gSHnm00uav1bvbqcf9PR8u+utKZGjZOgdiWxYjSr38OOU5UMdbyzbbhCmD/TaOS23D7BWC3jzSLj/kcoKKdTB7uGIMko61QUOZ33I0rBwikHKEk5zeM7bchQ+aVlT9yic43rPoVBHNndV7HTLOGgfROR3FKikm3lEIcZp5Kt5ZUkKexrlq/Vq82VnUqzXrSwedmv/NqPV0m4hkjYJ+n3rltXFk2UrJST+tRcZo1dG3PFO29HtAXG8DBc6eNQWxmfWDNMQEkV79xSTN8olh6wjK6G83wHiRmyHS23R0piG6qObQdqmBolGnEY33y1YudOAGeCeBeQmlX654hOuXsJaEKEXFdvME+q4nxCg9TA7F01+oN2elpIm+8u9+/ZlW3MhbL9Po76YjF2lSJvx9ccRtVxyH0b1aH8Bc3gufjbD3zAzirGcyCXCCP2+/toHduKH4jUyBFfmc7BqGt3MIbyajOxhT/a51Vxh18dFBaJsikR+IJW8mqDmb9vO9WyN6WLRFYfhnqhEwjfO8eJcsVK7i/JbBG5//W6BOYLMb7utnI69thKCIm8eImNiJDAy+zcq9+EHfoE3u9a3GiCJNgJc+RDBdThvK94u5PdK1T78njqbBg54QWScOpE8YONKAF7e6XYkuPXRIcmUbKXqMn+fHbFL6aHeH77GcSBc3bjm6WXEgj9+epMVuMkJaTgUr/DapKwkUWxM4lZmU00WZU3mmzcGQ1bDAuM09M2cAU6ea2AtKlWCMrKEyMDA0OQ1VI1q/kt6OtpPRrxV8QhQqNqL5u8ES30H3wEyTinfHY5tmybVFRlK5nrTMPG1nXYTrpeNgPTsJvbtWAV5ndsiBfPvkr5BUFQWgirrKO807J10aKN5HT6IbMUMBq3M5IXYrlSUG5/97Cq4kRX/OiVtcv48ccehdSPy9Pf1AAEQqKG7a/i24IbtRTW+DSmWyv+Li5JKD9cLd5ZaUDRg57PAGnE9quDZxToNlUA+PUB/onuYDw+rBH0JjfsZuvqMUUURP2jDsNUPYk7hsMgAMytBLtsMck8n626NkBt5f8JLVFU07kLdmWLXHb8qhWhxOKNQbCxnA7yYmGRT7VX2qiwdXnxG7MonWe3SjnqXMwEmxWfR8qlp1/ZDloptZ5Gw8Ynq3ypp6N7yADpSG8Ra/vTZ7HNV/KLk8niJFTJ6D5G31lO4mLpfzxMBH68Mlqnnz2aHWEDfrvglctSTBm9cSOpijrhLftBfTo5TvBIOkL+9BgFU4saL8Fwc2L2GHfoJwppeKz9SfwYma5mTapG89Jcv31wpr0VRR67PTlrNM4OpMklhF8eVXVoTB3FzYhCo0xPeBTuf5BOD1oxqcY/ZOg/sITRtfGilRUMDBHSKQ5WcNanaAeOdIA9y2a0TRd3Hiq+W13wiIsejT753BZPW5jc7yFY7y1HObXcbbih6+ujNjJe1Z0p2jW/qu/l9Y7H6u//yZRGS0MagkgwgQPf/Oq4eig5Jm1FzNWkGwlGJJDb22RN4A2skcHBjHvp3Dpaskwtjw/Gux714Z9tmAZj0nhd3M5ohZNH9zwyEsbFiOK9Vuapol6VFumJD8TSZMN7x964+Xs/yNPmpA9cXyOHVshO53zjh56s/u1e0JfqYYE4fqhIaoyagUe9SSI2sH2BlmrhWiGBEY08xOd/fgizpWaEpDBDK5bvHmLK/XPHegzXnBTnemfX9a+a6L/Bbqi/alfBmLCxa+EKgijqn7zLZkz8sw2EX1vb+wq/ClzXIDDi4ZuFRbjHFjx+pY6sQt5IM57uEFzekg2eflgMIPkvHUz0l57BsYKE8sqNNYxK6x7QvgkaL4JDYlfXYvz+bdcUxQKjIFEh+c0pXU6NOdXLYTVEx4+JYeY5ZIGAXIPteJ5dSe86o4dGCiDDvFqthj7/tEtvfgKyy7mIPex/W3zNLuMWbPWbJbom+L4XaeW88Ouj71oP5uFeEMD/xT4ONdU8K81tACfdpKuosu3Xehkkvpax1j+kKQCPGZ7fV9GmzQmPjFnakEmuWBmCt9a4WGeQ4lA12oBl4AFMctltYwhOBdPAHMGRxGL8bAlfYu7kMMjLjO+aix39vg1IsWtGl6gwTIKYmL4U2j1yYEGwEOPOn4k3/07uIdZ93ECIkm64qvZz/2sjYGnQ2EWZEIjEOd8tDgqsLL67EFGN/LmLH5wxM8+4pZh/iBsKqoC/tMonqkR69a6fJN1NFYs7ZfljOc1YCNMZeNHXSDGmqHDw+7c7cw0F1KBgko68CROH/+A2Aw2cTWi/qLpQriC+A8TVMDKl+rlv2ghgtu+JUgsp7HS/WIgYo+BdRBj2MrR2aBMcKtJFeOLlcxrepVR5bSkUCoQdDeTZ9FS0IZTU7/pMXO84oHYHNeHmWTARbiwhE0oDmOzDHvW4sjgcP6tey81pYXwNiBmhPs4SSluR9ibddSa2qCERHS2fKqepdY0kA7O6RXOKiHUr4AGbFNwX4WIuO5tN/uWIa94iCcQMNso55JlL3CSoTDTN9CmZ8Rzu4WPBar3Nalam10RJQFjYQo67o2r8DKEHMGhE98aapyfNtA8EgJRSD/yDfc5Yp3dIsVCJVyoYydry81KHV8TTtAe4TtfegFEwhMRMmLa77XcOVWOe9DbmG2+GV/zF6fygeVNIsnZGm5A/cEUpHeNlfuEyod5fDfOxIENW3DvLAMYrZJ7w7xDP05eNd3xagwuL92BJFKdYD3ZFe133wn2u2x8tsJLU1z+kSYpCXbMbXiqNzNQOjzN5BRuTNfWj2W5jSKwjAltMyBy7NjGJjhejqNi45iGRzPxl4rNGgnY9tw2d6RkQKSHjxl3cTCvwV9KsIfekruGz7fttBZAbfRwRORaUQyg5ueQAkF5I6rmWzV1VygDMxnztWHOATFs6WAjFSm4kxIqYTg25YyiLBD0ZWS2B7Y+mjjKSLf9JSFFcg/BxYDOvvuvDZxKbRhUrd7QwuPkGf6H/PNweczZkt75Tr1zxhkT8IpvZxCoNI95RTzkaIvt9BlUXWqQurI3yEtjRzfmDpShIxXL9GM5jbK+pqfrudYLXJSlvdBs1RPVTHMtZjGJZYt0kxTIReFJmldTjGyf8gr+bco2vAj/nUUQUZGALfQUTZHUtT3iVQFHM8AkHq6rI4gPRtjsdFu5eAu3tiLK0Yf3hqf8m9Txzlq7I6KmcoKItznpo0dwj4Kmqs/SNItn0rxntvOt6NJLcczVTdqTxRjn5c+7MLQUgwZJPs+RrFzMVKkwZ5XNAW5kpsO0FQ3VWV9XnV6FDY+QFs4YfVzBFtysigmWoQtIN3Eq/Pkg3E96HOc87GZSZvGgAa6aDUM5vXkFaAmHJ42+K4Ml7xUDEQr0OTxLs6LN9dEYybo1zTD73WRPzvyi9Xso8oMtqQZ1YcS/id9M9c/KAZyVcy1qe2pfqFvGsN/ivef29/EGBy4wkMgC9+fFxLu50iyzIOxupB6EREss9bYfY3sXOZssyPjKVF5dpyYrd6QIrUxCBrzCM1HmxevPkch40EnymX/ztPM+LxgxlWGIXidqGbp70lo4p/eoFs7pY1Z4PbyG/LJjehRhcL+7Vwj1CLtvcZAshXilKxpYIxaiepNOinnbUxit7BNYKe1BqwkGvMtu2T2N4EJUaCIjjDpOOmbE86M2s1xVyw1Jh5H7CvVN1b/2MEtqg164pEveY6O6XwwDIdax2ExrUc29HfOKJEytCZx80MP6bpFicTD4eMNe9/6EanEITBC2KjQ3rSWuk2mpYDhtmXgr1feS6mEvuek0sHeHbudHBRKp/PO1upgKCILW6GKC/++gWdaGQpuzkxfEhRhb2Lagz5Clrcuw6Aqjq6Qpa4HqXu0cJO7r3U1Rn6yZepMZ5RATL504nTXaOffKxhstZBW/z6MOe817mraZOFrGNDFr7uz4QiJ33TkLMRjRvkfyB/N/pOJ89ldWDSM569GRW+jTBAY29Nlib7qjuspCsXuSJJ3dYpyLQ4RRoI9MTKbI78N1U4Yq7FMDR0vxuOoC/cnxC/Q2YUwZ0H82WC7JbqU9RPWBI1uXiR/XKctGHBN9UO+Kow829WVORzxMKngSzh6QDdYsj3FDfynRLE5O6wpsFHuYAh48C484j5t7FnmMLDfG6PAPFx1IoZnzTR7Szxe+WN8M8gSgnYYpoGJZpq1KL8MHJyB8hAkrkvvUuv78dmPIyj9TxjvI1+NVJtheLdGO5R5h/2I/fREOwLN1mdkMGcYwIUxuhbzoFTB3h0b49srRgFJEELFvD3J5nYH+8AFZiYfvwKSLWJ4kNRUY6teXGWRE+uWM7zaH02I2T0mjK/QpG9N8KsNXN8Dy8yENma5c0yy+YgjM+oIK42ncAUt5O8tsAxnswrsC66wCfezfcjXEfQBhrC66FwoO5CfRbpUlPVsc0aU9schEIXaTcVG4CR94wYKYGXE4jKGXcdLwvgMnAGByR1I4WK8RfpOrNm5GhCjrLmFCJub8cMHisFMhvpze7BJoPalTCQ+nmU8Bim1tN8u37bbDbGWilNxQAA/czPnwvB920x4Skjv6p6amFkqhmzH8SIlN3tq6aDjM/N/3tvUIuGbiR7FLa/Rm6AoGb6DAGttbtXc6VKs/MSATkfBz0QjVdX5JanU/oRVKUh1z5vcibZ11VKr1sesazK/VMLbqM5hKZ5I2OCdSD1IrPW23LxlddZNFN2YMImf67Hr+Apbe2/xQmONJM4fWV1YSMs19AlsKdHw5DakRo0a/JAnFDgmUG2RWs3lrmh1l9tFnNUtXfjHNsUecw6eexIinI3XKXH4gjuDU58n1MeTo/edzDc1/EmEf/CyOIRe+0oM49jusKJ5uSfyh+STVq9LEwis4l6CSm0EuRe08LeU4CpVQKhuvX/bl40K2xbeaJgmMSL2miByoZ72CRLqbunYRhPU+ph0JjhHZGm/RNoRVtDs19KEP6STBqDtioMs2wPpieaMxw0hYLWEwr5ZWDplwYUPSZyYeQpC6z6BWpjFCoqZ5LntdqOZ+SLiGLB3gvwzZY/zwVLsSD6fB0N/2ncoVNja1nSDLfmChVF6UKrYnaaZa0eqjmTYO39yNrfvSS+gZhTYwduMf89MqrrIuUeINzI6QHthtwRgrs5ec+eVKTY3uM7ICkBxm4GGUJFcx/9S2nNBzcbu1pcLw2XekZNkBhpiB2YpP6do3vJEQWmVi6DxUzwhdL6T3Ut49gfd+UeYGTBlZL9DVGto29M0D3ZeeSpElWZhJCCqeXKuzpLbnGtyDP6r+hIAiSpDoTDbiUdrFCldT/+ntjRa7ntyyQ7g+TpTd/XgmyJLcFGMZSBT9+DPzV9kBVwY9sPDjtmR6DVvEWSA==" alt="Bridal Chandelier">
+                    <div class="card-body d-flex flex-column">
+                        <h6>gold Huggie</h6>
+                        <p class="text-danger fw-bold">₹19990</p>
+                        <button class="btn btn-outline-warning mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+           
+
+        <section id="contact" class="mt-5 p-4 border rounded bg-light">
+            <h3>Contact Details</h3>
+            <p><strong>Phone:</strong> +91 7569212757</p>
+            <p><strong>Email:</strong> komala7579@.com</p>
+            <p><strong>Address:</strong> 12, opposite to SBI bank, Baireddyplli, andhra pradesh</p>
+        </section>
+
+        <div class="card mt-4" id="cartSummary">
+            <div class="card-body">
+                <h4 class="card-title">Cart Summary</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item cart-item">Selected item added to cart</li>
+                </ul>
+                <p class="fw-bold mt-3 mb-0 cart-total">Total: 1 item added</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="text-center py-4 bg-dark text-white mt-4">
+        <p class="mb-0">© 2026 Earring Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

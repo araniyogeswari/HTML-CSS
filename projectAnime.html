@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Sales Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f172a, #111827);
+      color: #f8fafc;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1400&q=80') center/cover;
+      min-height: 70vh;
+    }
+    .hero-overlay {
+      background: rgba(3, 7, 18, 0.7);
+      min-height: 70vh;
+    }
+    .card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border-radius: 1rem;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+    .product-illustration {
+      background: linear-gradient(135deg, #111827, #1f2937);
+      border-radius: 1rem;
+      padding: 0.75rem;
+    }
+    .product-illustration img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 0.8rem;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Anime Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sales">Sales</a></li>
+          <li class="nav-item"><a class="nav-link" href="#anime">Anime Collection</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay d-flex align-items-center">
+      <div class="container py-5">
+        <h1 class="display-4 fw-bold">Anime Sales Store</h1>
+        <p class="lead mt-3">Shop premium anime collectibles, apparel, and figures at amazing prices in Indian rupees.</p>
+        <a href="#anime" class="btn btn-danger btn-lg mt-3">Explore Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5" id="sales">
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="p-4 rounded bg-secondary bg-opacity-25">
+          <h4>🔥 Mega Sale</h4>
+          <p>Flat discounts on selected anime products.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 rounded bg-secondary bg-opacity-25">
+          <h4>🚚 Free Delivery</h4>
+          <p>Free shipping on orders above ₹999.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 rounded bg-secondary bg-opacity-25">
+          <h4>⭐ New Arrivals</h4>
+          <p>Fresh anime drops every week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-4" id="anime">
+    <h2 class="text-center mb-4">15 Anime Sales Items</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://wallpapercave.com/wp/wp5466393.jpg" alt="Naruto anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Naruto Figure</h5>
+            <p class="card-text">Premium collectible with special stand.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹1,299</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.e2idLvhBq-Z0tFbFhYxS9wHaEK?pid=Api&P=0&h=180" alt="One Piece anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">One Piece </h5>
+            <p class="card-text">Comfortable anime hoodie in black.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹1,799</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.0O-Z2XSxHD4Dn0axhdfzhwHaEK?pid=Api&P=0&h=180" alt="Demon Slayer anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Demon Slayer Sword</h5>
+            <p class="card-text">Replica sword for fans and collectors.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹2,199</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.cEiGoycNNljtHVl7TjO4AwHaEo?pid=Api&P=0&h=180" alt="Attack on Titan anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Attack on Titan Poster</h5>
+            <p class="card-text">A3 framed poster for your room.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹899</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://wallpapercave.com/wp/wp3023321.jpg" alt="Bleach anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Bleach </h5>
+            <p class="card-text">Stylish anime jacket with bold print.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹1,599</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.z0wIAFIcm2Qr2PTIsfLzUQHaEK?pid=Api&P=0&h=180" alt="Dragon Ball anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Dragon Ball</h5>
+            <p class="card-text">Limited edition fighter cap.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹799</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.KQszlFrK2GBVLK3mIUbN8wHaEK?pid=Api&P=0&h=180" alt="Jujutsu Kaisen anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Jujutsu Kaisen Figure</h5>
+            <p class="card-text">High quality collectible statue.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹1,499</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://img.uhdpaper.com/wallpaper/izuku-deku-my-hero-academia-796@5@h" alt="My Hero Academia anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">My Hero Academia </h5>
+            <p class="card-text">Collector ceramic mug with hero art.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹699</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.mEFIIxLw3zI6-NtgL0og4wHaEK?pid=Api&P=0&h=180" alt="Death Note anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Death Note </h5>
+            <p class="card-text">Premium notebook with dark theme.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹849</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.wpdqIkREHKHoJM-0p50MfgHaEm?pid=Api&P=0&h=180" alt="Fullmetal Alchemist anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fullmetal Alchemist </h5>
+            <p class="card-text">Collector storage box and art print.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹1,249</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.iISHcfHyZFTclHkq5RgdvgHaFQ?pid=Api&P=0&h=180" alt="Spy x Family anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Spy x Family Tee</h5>
+            <p class="card-text">Cute and trendy anime print tee.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹999</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.9kf1eMjQhKojvnCOpVv6XQHaEK?pid=Api&P=0&h=180" alt="Hunter x Hunter anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hunter x Hunter </h5>
+            <p class="card-text">Collector keychain with premium finish.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹499</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.zrgJ4CV-aKad92s2yqHw6AHaEK?pid=Api&P=0&h=180" alt="Tokyo Revengers anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Tokyo Revengers </h5>
+            <p class="card-text">Stylish sling bag with anime print.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹1,099</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.QA31npZy0IVrf3Hc__djpQHaEK?pid=Api&P=0&h=180" alt="Cowboy Bebop anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Cowboy Bebop </h5>
+            <p class="card-text">Leather wallet with retro anime design.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹749</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light">
+          <div class="product-illustration">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.GEgPBl1XzN6MAO1yoF54LAHaEK?pid=Api&P=0&h=180" alt="Chainsaw Man anime style illustration" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Chainsaw Man </h5>
+            <p class="card-text">Limited edition anime figure.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-danger">₹2,499</span>
+              <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark py-4 mt-5" id="contact">
+    <div class="container text-center text-light">
+      <p class="mb-1">Anime Hub © 2026</p>
+      <p class="mb-0">Email: hello@animehub.in | Phone: +91 98765 43210</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

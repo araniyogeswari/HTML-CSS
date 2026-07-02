@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Time</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+/* TITLE */
+.header {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 20px;
+    color: #00ffd5;
+}
+
+/* FILTER */
+.filter-btns {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.filter-btns button {
+    margin: 5px;
+}
+
+/* CARD */
+.movie-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE */
+.movie-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+/* MOVIE NAME BUTTON */
+.name-btn {
+    width: 100%;
+    margin-bottom: 5px;
+    background: #ffffff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+/* WATCH BUTTON */
+.watch-btn {
+    width: 100%;
+    background: #00ffd5;
+    border: none;
+    font-weight: bold;
+}
+.watch-btn:hover {
+    background: #00bfa6;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">SHOW TIME</div>
+
+<!-- FILTER -->
+<div class="filter-btns">
+    <button class="btn btn-light" onclick="filterMovies('all')">All</button>
+    <button class="btn btn-warning" onclick="filterMovies('comedy')">Comedy</button>
+    <button class="btn btn-danger" onclick="filterMovies('action')">Action</button>
+    <button class="btn btn-success" onclick="filterMovies('love')">Love</button>
+    <button class="btn btn-info" onclick="filterMovies('horror')">Horror</button>
+</div>
+
+<div class="container">
+<div class="row">
+
+<!-- COMEDY -->
+<div class="col-md-6 mb-4 movie comedy">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/8f/e3/10/8fe310e8e434286ebeb66f88b16c939c.jpg">
+<div class="card-body">
+<button class="name-btn">JATHIRATHNALU</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie comedy">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/79/bf/a6/79bfa621098b8d79fec547ba8987e102.jpg">
+<div class="card-body">
+<button class="name-btn">MAD</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie comedy">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/e2/92/da/e292dafbea2347dfb01de3a53c464087.jpg">
+<div class="card-body">
+<button class="name-btn">LITTLE HEARTS</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie comedy">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/5e/c3/00/5ec3009df566255cac1e3c1268b5b08d.jpg">
+<div class="card-body">
+<button class="name-btn">ANAGANAGA OKA RAJU</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie comedy">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/0b/b6/37/0bb6370b4f73d571c95e89a10a773dc3.jpg">
+<div class="card-body">
+<button class="name-btn">F2</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie comedy">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/74/5e/66/745e666c06b7442f2b332dae1f6f42e1.jpg">
+<div class="card-body">
+<button class="name-btn">DJ TILLU</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<!-- ACTION -->
+<div class="col-md-6 mb-4 movie action">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/64/73/4d/64734dfa11f06aed1e73461ae6f4bebe.jpg">
+<div class="card-body">
+<button class="name-btn">SALAAR</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie action">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/be/35/99/be3599f149740fb69a1e91a35803cd1e.jpg">
+<div class="card-body">
+<button class="name-btn">DHURANDHAR</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie action">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/ca/8b/78/ca8b785942be61902b18ffdb04c75342.jpg">
+<div class="card-body">
+<button class="name-btn">PUSHPA</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie action">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/c2/80/d2/c280d2f9991fc4b693c0bde36f468488.jpg">
+<div class="card-body">
+<button class="name-btn">RRR</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie action">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/71/4d/a4/714da4fcd7d3aa94f78e6c0b2f5834a3.jpg">
+<div class="card-body">
+<button class="name-btn">KGF</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie action">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/5c/ea/91/5cea91d719a28de2b37038fe113d6c48.jpg">
+<div class="card-body">
+<button class="name-btn">BAHUBALI</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<!-- LOVE -->
+<div class="col-md-6 mb-4 movie love">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/e1/78/d5/e178d539ed786561ca13c53df6e6c7bc.jpg">
+<div class="card-body">
+<button class="name-btn">DARLING</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie love">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/67/61/b3/6761b35ba6abf9823b34e6f660fe2f36.jpg">
+<div class="card-body">
+<button class="name-btn">ARYA 2</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie love">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/c3/2f/40/c32f4030bdeaa3c606ff87e6fe00b9ce.jpg">
+<div class="card-body">
+<button class="name-btn">ORANGE</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie love">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/d7/7f/d3/d77fd34a476ac699a07deb1387ecfdf0.jpg">
+<div class="card-body">
+<button class="name-btn">WITH LOVE</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie love">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/70/97/65/709765d330bb3991962c6ea909decb81.jpg">
+<div class="card-body">
+<button class="name-btn">DEAR COMRADE</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie love">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/6a/66/78/6a66786f254cf82693b774e383222390.jpg">
+<div class="card-body">
+<button class="name-btn">SEETHA RAMAM</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<!-- HORROR -->
+<div class="col-md-6 mb-4 movie horror">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/74/6e/82/746e820ad164d29a04b909c9db919e11.jpg">
+<div class="card-body">
+<button class="name-btn">ARUNDHATI</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie horror">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/1200x/dd/d3/67/ddd367dc42b9ff7eb7f1090a842206c2.jpg">
+<div class="card-body">
+<button class="name-btn">VIRUPAKSHA</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie horror">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/39/11/88/39118836f1f9b8156e362b5860f65472.jpg">
+<div class="card-body">
+<button class="name-btn">BAAK</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4 movie horror">
+<div class="card movie-card">
+<img src="https://i.pinimg.com/736x/7a/95/05/7a9505312e04b96e91228bc3f6c66fa1.jpg">
+<div class="card-body">
+<button class="name-btn">RAJA SAAB</button>
+<button class="watch-btn">Watch Now</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+function filterMovies(category) {
+    let movies = document.querySelectorAll('.movie');
+
+    movies.forEach(movie => {
+        if (category === 'all') {
+            movie.style.display = 'block';
+        } else {
+            movie.style.display = movie.classList.contains(category) ? 'block' : 'none';
+        }
+    });
+}
+</script>
+
+</body>
+</html>
